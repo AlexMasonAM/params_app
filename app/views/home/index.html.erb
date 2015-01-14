@@ -1,4 +1,5 @@
-<% form_tag('/next', method: "get") do %>
-  My name is: <%= text_field :name %>
-  My favorite programming language is: <%= text_field :favorite %>
+<%= form_tag('/next', method: "get") do %>
+  My name is: <%= text_field_tag :name %><br>
+  My favorite programming language is: <%= text_field_tag :favorite %><br>
+  <%= submit_tag "Submit" %>
   <% end %>
